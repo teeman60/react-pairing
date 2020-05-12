@@ -1,4 +1,5 @@
 import React from 'react';
+import { EditPoemButton } from './EditPoemButton';
 
 export function PoemCard(){
     return (
@@ -11,6 +12,7 @@ export function PoemCard(){
             </div>
             <div className="content">
                 <button className="ui red button">Delete</button>
+                <EditPoemButton poem={null /* Replace this with a poem object */}/>
             </div>
         </div>
     )
