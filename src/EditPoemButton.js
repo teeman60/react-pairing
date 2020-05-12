@@ -4,11 +4,8 @@ export class EditPoemButton extends React.Component {
 
     state = {
         isShowingModal: false,
-        name: this.props.poem.name,
         content: this.props.poem.content
     }
-
-    setName = e => this.setState({ name: e.target.value })
 
     setContent = e => this.setState({ content: e.target.value })
 
@@ -35,12 +32,8 @@ export class EditPoemButton extends React.Component {
                     </div>
                     <div className="ui form content">
                         <div className="field">
-                            <label>Name: </label>
-                            <input value={this.state.name} />
-                        </div>
-                        <div className="field">
                             <label>Content: </label>
-                            <textarea value={this.state.content} />
+                            <textarea value={this.state.content} onChange={this.setContent} />
                         </div>
                     </div>
                     <div className="actions">
