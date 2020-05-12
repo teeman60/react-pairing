@@ -28,11 +28,12 @@ This project will require you to use inverse dataflow and declarative state upda
 ##### `...`
 The spread operator can be used to copy the contents of an Array or Object into a new Array or Object.
 
-##### `.filter` 
+##### `array.filter` 
 The `.filter` iterator takes in a callback, and returns a new array containing every element for which the callback returned true
 Example:
 ```
 [1, 2, 3, 4, 5].filter( num => num > 3) // => [ 4, 5 ]
 ```
 
-##### 
+##### `array.slice`
+The `.slice` method takes in two numbers, a starting index an ending index, and returns an array with the elements between the two indexes
