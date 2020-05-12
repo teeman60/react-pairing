@@ -12,6 +12,10 @@ export class PoemForm extends React.Component{
 
     setContent = e => this.setState({ content: e.target.value })
 
+    handleSubmit = () => {
+        // What should we do here?
+    }
+
     render(){
         return (
             <div className="ui form">
@@ -24,7 +28,7 @@ export class PoemForm extends React.Component{
                     <label>Content:</label>
                     <textarea value={this.state.content} onChange={this.setContent}/>
                 </div>
-                <button className="ui green button">Create</button>
+                <button className="ui green button" onClick={this.handleSubmit} >Create</button>
             </div>
         )
     }
