@@ -12,7 +12,7 @@ export function PoemCard(){
             </div>
             <div className="content">
                 <button className="ui red button">Delete</button>
-                <EditPoemButton poem={null /* Replace this with a poem object */}/>
+                <EditPoemButton poem={  { /* Replace this empty object with a poem object */ }  }/>
             </div>
         </div>
     )
