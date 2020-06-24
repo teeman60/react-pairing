@@ -15,7 +15,12 @@ export class EditPoemButton extends React.Component {
 
     handleSubmit = () => {
         this.hideModal()
+
         // What else should we do onSubmit?
+        this.props.editContent({
+            name: this.props.poem.name,
+            content: this.state.content
+        })
     }
 
     render(){
@@ -28,7 +33,7 @@ export class EditPoemButton extends React.Component {
                     style={{ position: 'fixed', top: '10%', left: '10%'}}
                 >
                     <div className="header">
-                        Replace this with Poem Name
+                       {this.props.poem.name} 
                     </div>
                     <div className="ui form content">
                         <div className="field">

@@ -14,6 +14,7 @@ export class PoemForm extends React.Component{
 
     handleSubmit = () => {
         // What should we do here?
+        this.props.addPoem({name: this.state.name, content: this.state.content})
     }
 
     render(){
